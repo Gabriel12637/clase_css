@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 2px solid #2196F3; /* Blue border around the entire container */
+    border-radius: 15px;
+    overflow: hidden; /* Ensures the border radius works with the content */
+}
+
+/* Top section - yellow/green in the mockup */
+.top-section {
+    background-color: rgba(173, 255, 47, 0.3); /* Light green with opacity */
+    border: 2px solid #FFC107; /* Yellow border */
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Main content layout */
+.main-content {
+    display: flex;
+    margin: 0 10px;
+}
+
+/* Left sidebar - blue in the mockup */
+.left-sidebar {
+    flex: 1;
+    background-color: rgba(33, 150, 243, 0.3); /* Light blue with opacity */
+    border: 2px solid #2196F3; /* Blue border */
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/* Center content - blue in the mockup */
+.center-content {
+    flex: 3;
+    background-color: rgba(33, 150, 243, 0.3); /* Light blue with opacity */
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Right sidebar - blue in the mockup */
+.right-sidebar {
+    flex: 1;
+    background-color: rgba(33, 150, 243, 0.3); /* Light blue with opacity */
+    border: 2px solid #2196F3; /* Blue border */
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+/* Bottom section - similar to the top in the mockup */
+.bottom-section {
+    background-color: rgba(173, 255, 47, 0.3); /* Light green with opacity */
+    border: 2px solid #FF5722; /* Orange/red border */
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .left-sidebar, .right-sidebar, .center-content {
+        margin: 10px 0;
+    }
+}
