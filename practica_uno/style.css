@@ -1,88 +1,68 @@
-/* General Reset */
-* {
+body {
+    background-color: #b8e0e0;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    border: 2px solid #2196F3; /* Blue border around the entire container */
-    border-radius: 15px;
-    overflow: hidden; /* Ensures the border radius works with the content */
-}
-
-/* Top section - yellow/green in the mockup */
-.top-section {
-    background-color: rgba(173, 255, 47, 0.3); /* Light green with opacity */
-    border: 2px solid #FFC107; /* Yellow border */
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-/* Main content layout */
-.main-content {
     display: flex;
-    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Left sidebar - blue in the mockup */
-.left-sidebar {
+.contenedor {
+    width: 800px;
+    height: 500px;
+    background-color: #b8e0e0;
+    border: 2px solid #5b9ea6;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-superior {
+    height: 50px;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(45deg, #d5e8d5 25%, #c9dcc9 25%, 
+    #c9dcc9 50%, #d5e8d5 50%, #d5e8d5 75%, #c9dcc9 75%, #c9dcc9 100%);
+    background-size: 10px 10px;
+}
+
+.contenido {
+    display: flex;
     flex: 1;
-    background-color: rgba(33, 150, 243, 0.3); /* Light blue with opacity */
-    border: 2px solid #2196F3; /* Blue border */
-    padding: 20px;
-    margin-right: 10px;
-    border-radius: 10px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-/* Center content - blue in the mockup */
-.center-content {
-    flex: 3;
-    background-color: rgba(33, 150, 243, 0.3); /* Light blue with opacity */
-    border: 2px solid #4CAF50; /* Green border */
-    padding: 20px;
+.lateral {
+    width: 20%;
+    background-color: #c5e3e6;
+    border: 1px solid #5b9ea6;
     border-radius: 10px;
+    background-image: linear-gradient(45deg, #c5e3e6 25%, #b8d6d9 25%, 
+    #b8d6d9 50%, #c5e3e6 50%, #c5e3e6 75%, #b8d6d9 75%, #b8d6d9 100%);
+    background-size: 10px 10px;
 }
 
-/* Right sidebar - blue in the mockup */
-.right-sidebar {
+.central {
     flex: 1;
-    background-color: rgba(33, 150, 243, 0.3); /* Light blue with opacity */
-    border: 2px solid #2196F3; /* Blue border */
-    padding: 20px;
-    margin-left: 10px;
+    background-color: #1eee0b;
+    border: 1px solid #0cf51f;
     border-radius: 10px;
+    background-image: linear-gradient(45deg, #c5e3e6 25%, #b8d6d9 25%,
+     #b8d6d9 50%, #c5e3e6 50%, #c5e3e6 75%, #b8d6d9 75%, #b8d6d9 100%);
+    background-size: 10px 10px;
 }
 
-/* Bottom section - similar to the top in the mockup */
-.bottom-section {
-    background-color: rgba(173, 255, 47, 0.3); /* Light green with opacity */
-    border: 2px solid #FF5722; /* Orange/red border */
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
+.barra-inferior {
+    height: 50px;
+    background-color: #d8fd08ec;
+    border: 1px solid #c5ee10;
     border-radius: 10px;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-    }
-    
-    .left-sidebar, .right-sidebar, .center-content {
-        margin: 10px 0;
-    }
+    background-image: linear-gradient(45deg, #e0e0e0 25%, #d4d4d4 25%, 
+    #d4d4d4 50%, #e0e0e0 50%, #e0e0e0 75%, #d4d4d4 75%, #d4d4d4 100%);
+    background-size: 10px 10px;
 }
